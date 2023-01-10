@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div>
+        <header><h1>SING IN</h1></header>
+            <form id="form_id" method="post" name="myform" autocomplete="off">
+                <div class="inputContainer">
+                    <input id="login" type="text" placeholder=" ">
+                    <label for="login">Login</label>    
+                </div>
+                <div class="inputContainer">
+                    <input id="password" type="password" placeholder=" ">
+                    <label for="password">Password</label>
+                </div>
+                <label for="rm">Remember me</label>
+                <input id="rm" type="checkbox" checked>
+                <div class="btn">
+                    <input type="button" value="Login" id="submit" onclick="validate()"/>
+                </div>
+            </form>
+        <p><b>User Name : root<br/>Password : toor</b></p>
+     </div>
+  </body>
+</html>
