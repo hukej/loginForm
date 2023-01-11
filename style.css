@@ -61,7 +61,7 @@ label{
     font-style: italic;
     position: absolute;
     opacity: 0.5;
-    top:35%;
+    top:20%;
     transform: translateY(-50%);
     left: 5%;
     transition: left 0.5s, opacity 0.5s;
