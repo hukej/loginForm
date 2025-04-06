@@ -1,0 +1,161 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    text-align: center;
+    background:linear-gradient(to top right,rgb(13, 14, 14), rgb(42, 45, 48));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+form{
+    background:rgb(27, 29, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 75%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px 0 black;
+
+}
+
+#formContentContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    
+}
+
+#inputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 60%;
+}
+
+.inputText , button{
+    background-color: rgb(42, 45, 48);
+    box-shadow: 0px 10px 25px 0 black;
+    border: none;
+    border-radius: 15px;
+    color: whitesmoke;
+    padding:  10px 20px 10px 20px;
+    width: 95%;
+    height: 20%;
+}
+
+input{
+    cursor: text;
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    color: white;
+    cursor: pointer;
+}
+
+#rm {
+    background-color: rgb(42, 45, 48);
+    margin: 0;
+    font: inherit;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0 black;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+#rm:checked {
+    background-color: white;
+    border-color: white;
+}
+
+#rm::before {
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+    background-color: rgb(27, 29, 31);
+    border-radius: 2px;
+}
+
+#rm:checked::before {
+    transform: scale(1);
+}
+
+#btn{
+    font-size: large;
+    cursor: pointer;
+}
+
+input:focus, #btn:focus{
+    outline: solid 1px white;
+}
+
+p{
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    #formContentContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+    }
+
+    #inputContainer {
+        width: 100%;
+        height: 50%;
+        justify-content: space-between;
+        margin-bottom: 20%;
+    }
+
+    form {
+        height: 90%;
+        width: 90%;
+
+    }
+
+    label {
+        width: 60%;
+    }
+
+    .inputText, button {
+        width: 90%;
+        height: auto;
+    }
+}
